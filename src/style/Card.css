@@ -1,0 +1,89 @@
+.card {
+  width: 500px;
+  max-width: 80dvw;
+  aspect-ratio: 2/3;
+  padding: 24px;
+  margin: 10px;
+  border-radius: 15px;
+  background: linear-gradient(190deg, #eaeaea 30%, #7f00ff 83%);
+  box-shadow: 0 0 20px #00000033;
+  color: white;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.avatar-ring {
+  position: relative;
+  height: 250px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.avatar {
+  position: absolute;
+  width: 50%;
+  max-width: 250px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  padding: 5%;
+}
+
+.circular-text {
+  position: absolute;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text {
+    font-size: 20px;
+    fill: white;
+    letter-spacing: 2px;
+  }
+
+  animation: rotateText 10s linear infinite;
+}
+
+.social-icons {
+  margin-top: 20%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-icons a {
+  margin: 0 8px;
+
+  img {
+    width: 6dvh;
+    aspect-ratio: 1/1;
+    transition: transform 0.2s ease;
+  }
+}
+
+.info {
+  margin: 20px 10px;
+  text-align: start;
+  vertical-align: bottom;
+
+  .c-name {
+    font-size: 34px;
+    margin: 0;
+  }
+
+  .e-name {
+    font-size: 26px;
+    margin: 0;
+  }
+
+  .job-title {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .email {
+    font-size: 14px;
+    margin: 0;
+  }
+}
