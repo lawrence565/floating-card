@@ -1,4 +1,9 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import avatar from "./assets/avatar.png";
+import LinkedInIcon from "./assets/LinkedIn.svg";
+import InstagramIcon from "./assets/Instagram.svg";
+import MailIcon from "./assets/Mail.svg";
+import GitHubIcon from "./assets/GitHub.svg";
 import "./style/Card.css";
 
 export default function Card() {
@@ -55,7 +60,7 @@ export default function Card() {
       }}
     >
       <div className="avatar-ring">
-        <img src="/avatar.png" className="avatar" ref={avatarRef} />
+        <img src={avatar} className="avatar" ref={avatarRef} />
         <svg
           className="circular-text"
           viewBox="0 0 300 300"
@@ -96,16 +101,16 @@ export default function Card() {
       </div>
       <div className="social-icons">
         <a href="https://github.com/lawrence565">
-          <img src="/GitHub.svg" />
+          <img src={GitHubIcon} />
         </a>
         <a href="https://www.linkedin.com/in/jeremy-zheng-a699a2146/">
-          <img src="/LinkedIn.svg" />
+          <img src={LinkedInIcon} />
         </a>
         <a href="https://www.instagram.com/py___wuuuuuuuuuu/">
-          <img src="/Instagram.svg" />
+          <img src={InstagramIcon} />
         </a>
         <a href="mailto:lawrence891106@gmail.com">
-          <img src="/Mail.svg" />
+          <img src={MailIcon} />
         </a>
       </div>
       <div className="info">
